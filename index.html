@@ -1,0 +1,32 @@
+<html>
+<head id="container">
+<title>
+<link rel="stylesheet" href="style.css"></link> 
+</title>
+<h1>Family Book</h1>
+<br>
+<br>
+<button onclick="change()">Next Page</button>
+
+<img id="images" src= "https://images-na.ssl-images-amazon.com/images/I/51KNpAKei-L.jpg" >
+
+<h2 id="name">
+
+</h2>
+
+<script>
+    var img_change = ["https://www.clipartmax.com/png/middle/8-89057_cooking-mom-clipart-mom-cooking-clip-art.png"
+    ,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-ImA7saXf5Ihdy5PH3Fg9bq3_Tk3Mxwp1Ig&usqp=CAU"];
+    var name_change = ["Family Book","Kuhu Jain","Deep Chand Jain"];
+    
+    var images = 0;
+function change()
+{
+document.getElementById("name").innerHTML = name_change [images];
+document.getElementById("images").innerHTML =img_change [images];
+i++;
+}
+</script>
+
+</head>
+</html>
